@@ -1,0 +1,50 @@
+slice_name: Daily Active Users (DAU)
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number
+params:
+  datasource: 1__table
+  viz_type: big_number
+  x_axis: sales_date
+  time_grain_sqla: P1D
+  aggregation: LAST_VALUE
+  metric:
+    expressionType: SQL
+    sqlExpression: SUM(unique_customers)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: SUM(unique_customers)
+    optionName: metric_zggzehx1qss_e9aw1ekdkrp
+  adhoc_filters:
+  - clause: WHERE
+    subject: sales_date
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  show_trend_line: true
+  start_y_axis_at_zero: true
+  color_picker:
+    r: 0
+    g: 122
+    b: 135
+    a: 1
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  subtitle_font_size: 0.15
+  metric_name_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  rolling_type: None
+  extra_form_data: {}
+  dashboards:
+  - 2
+query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"sales_date","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","sqlExpression":"sales_date","label":"sales_date","expressionType":"SQL","isColumnReference":true}],"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(unique_customers)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(unique_customers)","optionName":"metric_zggzehx1qss_e9aw1ekdkrp"}],"annotation_layers":[],"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[{"operation":"pivot","options":{"index":["sales_date"],"columns":[],"aggregates":{"SUM(unique_customers)":{"operator":"mean"}},"drop_missing_columns":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"1__table","viz_type":"big_number","x_axis":"sales_date","time_grain_sqla":"P1D","aggregation":"LAST_VALUE","metric":{"expressionType":"SQL","sqlExpression":"SUM(unique_customers)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(unique_customers)","optionName":"metric_zggzehx1qss_e9aw1ekdkrp"},"adhoc_filters":[{"clause":"WHERE","subject":"sales_date","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"show_trend_line":true,"start_y_axis_at_zero":true,"color_picker":{"r":0,"g":122,"b":135,"a":1},"header_font_size":0.4,"subheader_font_size":0.15,"subtitle_font_size":0.15,"metric_name_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","rolling_type":"None","extra_form_data":{},"dashboards":[2],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 6fa7ba9c-3b22-4517-acb2-6a5e483f89a4
+version: 1.0.0
+dataset_uuid: c3e25892-2521-4093-bd77-c8263920f795

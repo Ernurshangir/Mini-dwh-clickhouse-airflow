@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Cleaned orders data"
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['new', 'paid', 'cancelled']

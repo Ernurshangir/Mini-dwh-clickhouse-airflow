@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dm_sales_daily
+    description: "Ежедневная статистика продаж"
+    columns:
+      - name: sales_date
+        description: "Дата продаж"
+        data_tests:
+          - not_null
+
+      - name: total_orders
+        description: "Всего заказов"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"

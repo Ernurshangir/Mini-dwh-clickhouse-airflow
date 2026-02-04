@@ -1,0 +1,6 @@
+FROM apache/superset:latest
+
+USER root
+# ставим всё, что нужно для ClickHouse
+RUN pip install --no-cache-dir clickhouse-sqlalchemy clickhouse-connect clickhousedb
+USER superset

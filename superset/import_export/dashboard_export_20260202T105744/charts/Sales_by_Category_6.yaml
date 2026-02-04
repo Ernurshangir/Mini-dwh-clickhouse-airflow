@@ -1,0 +1,61 @@
+slice_name: "Sales by Category (\u041F\u0440\u043E\u0434\u0430\u0436\u0438 \u043F\u043E\
+  \ \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u044F\u043C)"
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 3__table
+  viz_type: pie
+  slice_id: 6
+  groupby:
+  - category
+  metric:
+    aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: total_revenue
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 12
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: column
+      type_generic: 0
+      uuid: cf9bc641-d0a6-49a1-9e27-b12e9dc4c86e
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: SUM(total_revenue)
+    optionName: metric_tz3q1uh7sa_z74vrx4ka5i
+    sqlExpression: null
+  adhoc_filters: []
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  label_type: key
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  outerRadius: 70
+  innerRadius: 30
+  extra_form_data: {}
+  dashboards:
+  - 2
+query_context: '{"datasource":{"id":3,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["category"],"metrics":[{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"total_revenue","description":null,"expression":null,"filterable":true,"groupby":true,"id":12,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"cf9bc641-d0a6-49a1-9e27-b12e9dc4c86e","verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(total_revenue)","optionName":"metric_tz3q1uh7sa_z74vrx4ka5i","sqlExpression":null}],"orderby":[[{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"total_revenue","description":null,"expression":null,"filterable":true,"groupby":true,"id":12,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"cf9bc641-d0a6-49a1-9e27-b12e9dc4c86e","verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(total_revenue)","optionName":"metric_tz3q1uh7sa_z74vrx4ka5i","sqlExpression":null},false]],"annotation_layers":[],"row_limit":100,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[{"operation":"contribution","options":{"columns":["SUM(total_revenue)"],"rename_columns":["SUM(total_revenue)__contribution"]}}]}],"form_data":{"datasource":"3__table","viz_type":"pie","slice_id":6,"groupby":["category"],"metric":{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"total_revenue","description":null,"expression":null,"filterable":true,"groupby":true,"id":12,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"cf9bc641-d0a6-49a1-9e27-b12e9dc4c86e","verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(total_revenue)","optionName":"metric_tz3q1uh7sa_z74vrx4ka5i","sqlExpression":null},"adhoc_filters":[],"row_limit":100,"sort_by_metric":true,"color_scheme":"supersetColors","show_labels_threshold":5,"show_legend":true,"legendType":"scroll","legendOrientation":"top","label_type":"key","number_format":"SMART_NUMBER","date_format":"smart_date","show_labels":true,"labels_outside":true,"outerRadius":70,"innerRadius":30,"extra_form_data":{},"dashboards":[2],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 3f4e6692-5b17-4d39-894f-49f8f61c0202
+version: 1.0.0
+dataset_uuid: c5d96fda-2051-436a-879a-3379f97b58cf
