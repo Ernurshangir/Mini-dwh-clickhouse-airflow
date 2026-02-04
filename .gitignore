@@ -4,4 +4,5 @@ __pycache__/
 .airflow/
 superset_home/
 logs/
+dbt/target/
 
