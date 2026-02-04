@@ -28,8 +28,6 @@ git clone https://github.com/USERNAME/mini-dwh-clickhouse-airflow
 cd mini-dwh-clickhouse-airflow
 cp .env.example .env
 docker compose up -d
-
-![Sales Overview Dashboard](docs/Снимок экрана 2026-02-04 в 11.53.41 
-PM.png)
-![Sales Overview Dashboard](docs/Снимок экрана 2026-02-04 в 11.53.51 
-PM.png)
+```
+![Sales Overview Dashboard](docs/sc_airflow.png)
+![Sales Overview Dashboard](docs/sc_superset.png)
